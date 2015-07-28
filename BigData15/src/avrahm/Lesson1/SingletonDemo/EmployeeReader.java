@@ -9,6 +9,7 @@ public class EmployeeReader {
 	public static EmployeeReader Instance(){
 		if (_instance == null){
 			_instance = new EmployeeReader(); 
+			
 		}
 		return _instance;
 		

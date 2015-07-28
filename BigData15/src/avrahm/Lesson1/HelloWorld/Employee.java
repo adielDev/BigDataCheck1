@@ -11,6 +11,7 @@ abstract public class Employee {
 	public void setName(String name){
 		_name = name; 
 	}
+	
 	abstract public int GetSal(); 
 	
 	public void ReadConsole(Scanner scanner){
