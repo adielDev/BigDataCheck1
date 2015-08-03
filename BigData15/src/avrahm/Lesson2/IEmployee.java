@@ -5,7 +5,7 @@ import java.util.Scanner;
  interface IEmployee {
 	String getName();
 	void setName(String name);
-	int GetSal(); 
+	abstract int GetSal(); 
 	void ReadConsole(Scanner scanner);
 	
 }

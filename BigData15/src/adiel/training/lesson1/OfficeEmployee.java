@@ -6,9 +6,6 @@ public class OfficeEmployee extends MyEmployee{
 	
 	int _rank;
 	
-	
-
-
 
 	public int get_rank() {
 		return _rank;
