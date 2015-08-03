@@ -29,16 +29,14 @@ public class OfficeEmployee2 extends Employee2 implements IOfficeEmployee2 {
 
 	@Override
 	public int GetSal() {
-		return _rank*100;
+		return _office2.GetSal();
 	}
 
 	@Override
 	public void ReadConsole(Scanner scanner) {
 		super.ReadConsole(scanner);
 		scanner.nextLine();
-		System.out.println("Enter employee rank");
-		_rank = scanner.nextInt(); 	
-		_office2.setRank(_rank);
+		_office2.ReadConsole(scanner);
 	}
 
 	@Override

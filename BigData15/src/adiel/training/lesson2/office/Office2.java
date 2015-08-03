@@ -28,6 +28,19 @@ public class Office2 implements IOffice2 {
 	public String toString() {
 		return "Office2 [_rank=" + _rank + "]";
 	}
+
+	@Override
+	public void ReadConsole(Scanner scanner) {
+		System.out.println("Enter employee rank");
+		_rank = scanner.nextInt(); 	
+		setRank(_rank);
+		
+	}
+
+	@Override
+	public int GetSal() {
+		return _rank*100;
+	}
 	
 	
 

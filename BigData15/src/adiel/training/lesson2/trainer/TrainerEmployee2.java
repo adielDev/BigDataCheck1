@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import adiel.training.lesson2.employee.Employee2;
 
-public class TrainerEmployee2 extends Employee2 implements ITrainer2{
+public class TrainerEmployee2 extends Employee2 implements ITrainerEmployee2{
 
 	ITrainer2 _trainer;
 	
@@ -34,19 +34,13 @@ public class TrainerEmployee2 extends Employee2 implements ITrainer2{
 
 	@Override
 	public int GetSal() {
-		return _trainer.getHourly()*_trainer.getHours();
+		return _trainer.GetSal();
 	}
 
 	@Override
 	public void ReadConsole(Scanner scanner) {
 		super.ReadConsole(scanner);
-		scanner.nextLine();
-		System.out.println("Enter employee hours");
-		int hours=  scanner.nextInt(); 	
-		_trainer.setHours(hours);
-		System.out.println("Enter employee hourly");
-		int hourly=  scanner.nextInt(); 	
-		_trainer.setHourly(hourly);
+		_trainer.ReadConsole(scanner);
 		
 	}
 

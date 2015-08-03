@@ -18,7 +18,8 @@ public abstract class Employee2 implements IEmployee2 {
 	}
 
 	@Override
-	public  abstract int GetSal() ;
+	public
+	abstract int GetSal() ;
 	
 	@Override
 	public void ReadConsole(Scanner scanner) {

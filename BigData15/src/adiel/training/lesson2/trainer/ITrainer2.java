@@ -1,6 +1,8 @@
 package adiel.training.lesson2.trainer;
 
-public interface ITrainer2 {
+import adiel.training.lesson2.employee.IEmpType2;
+
+public interface ITrainer2 extends IEmpType2 {
 
 	void setHours(int hours);
 	void setHourly(int hourly);
