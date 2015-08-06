@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import adiel.training.lesson2.employee.Employee2;
 
-public class TrainerEmployee2 extends Employee2 implements ITrainerEmployee2{
+public class TrainerEmployee2 extends Employee2 implements ITrainer2{
 
 	ITrainer2 _trainer;
 	
